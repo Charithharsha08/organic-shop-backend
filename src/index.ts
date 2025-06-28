@@ -1,8 +1,9 @@
-import express, {Express, Request, Response} from "express";
+import { Request, Response} from "express";
+import app from "./app";
 
 
 // 1 initialize the express app
-const app: Express = express();
+/*const app : Express = express();*/
 
 // 2 define a application port
 const port = process.env.PORT || 3000;
