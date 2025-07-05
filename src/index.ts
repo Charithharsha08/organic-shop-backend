@@ -7,7 +7,7 @@ dotenv.config(); // load environment variables from .env
 /*const app : Express = express();*/
 
 // 2 define a application port
-const port = process.env.PORT; // define access the port
+const port = process.env.PORT || 3000; // define access the port if not defined use 3000
 
 // 3 define a simple http GET request
 app.get("/", (req : Request, res : Response) => {
