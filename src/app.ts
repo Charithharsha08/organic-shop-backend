@@ -1,4 +1,5 @@
 import express, {Express} from "express";
+import productRoutes from "./routes/product.routes";
 
 const app: Express = express();
 
@@ -9,3 +10,4 @@ export default app;
     // 2.1 instruct to parse the request payload data to be converted to JSON format
 
 app.use(express.json());
+app.use("/api/products", productRoutes);

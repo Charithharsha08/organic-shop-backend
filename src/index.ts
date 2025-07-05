@@ -10,10 +10,13 @@ dotenv.config(); // load environment variables from .env
 const port = process.env.PORT || 3000; // define access the port if not defined use 3000
 
 // 3 define a simple http GET request
+
+/*
 app.get("/", (req : Request, res : Response) => {
     console.log(req.body)
     res.send("Hello World!");
 });
+*/
 
 // 4 start the server
 app.listen(port, () => {
