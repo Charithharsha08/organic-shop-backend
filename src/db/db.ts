@@ -1,4 +1,4 @@
 import { Product } from "../model/product.model";
-export const productList: Product[] = [
-
-];
+import {Contact} from "../model/contact.model";
+export const productList: Product[] = [];
+export const contactList: Contact[] = [];
